@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${width}" height="${height}">
+    <defs>
+        <linearGradient id="glow" x2="0" y2="100%">
+            <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+            <stop offset="1" stop-opacity=".1"/>
+        </linearGradient>
+        <mask id="mask">
+            <rect width="${width}" height="${height}" rx="3" fill="#fff"/>
+        </mask>
+        <g id="text">
+            ${text1}
+            ${text2}
+        </g>
+    </defs>
+
+    <g mask="url(#mask)">
+        <rect fill="#555" x="0" y="0" width="${w1}" height="${height}"/>
+        <rect fill="#4c1" x="${w1}" y="0" width="${width}" height="${height}"/>
+        <rect fill="url(#glow)" x="0" y="0" width="${width}" height="${height}"/>
+    </g>
+    <g fill="#fff">
+        <use x="0" y="1" fill="#010101" fill-opacity=".3" xlink:href="#text"/>
+        <use x="0" y="0" xlink:href="#text"/>
+    </g>
+</svg>
