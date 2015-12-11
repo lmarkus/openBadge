@@ -1,15 +1,32 @@
 {
   "name": "openbadge",
-  "version": "1.0.1",
-  "description": "Create SVG badges for your github projects",
+  "version": "1.0.3",
+  "description": "Create SVG badges programatically",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified ...yet...\" && exit 1"
   },
   "author": "@lennymarkus",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "lodash": "^3.10.1",
     "opentype.js": "^0.6.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmarkus/openBadge.git"
+  },
+  "keywords": [
+    "shield.io",
+    "fury.io",
+    "badge",
+    "github",
+    "shield",
+    "svg"
+  ],
+  "bugs": {
+    "url": "https://github.com/lmarkus/openBadge/issues"
+  },
+  "homepage": "https://github.com/lmarkus/openBadge#readme"
 }

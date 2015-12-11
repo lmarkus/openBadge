@@ -1,10 +1,11 @@
 # The OpenBadge Project
 ## Why
-SVG badges are pretty awesome, but the current providers (eg: [shield.io](http://shield.io), [fury.io](http://fury.io)) are somewhat limited.
+SVG badges are pretty awesome, but the current solutions (eg: [shield.io](http://shield.io), [fury.io](http://fury.io)) are somewhat heavy.
 
 Sometimes you need to run custom functionality, sometimes the source data to generate lives behind firewalls, and sometimes hackers just want to hack.
  
 The Open Badge project gives you a module that produces custom SVG badges, giving you full control over fonts, sizes, padding, colors, etc.
+It's pretty lightweight, so you can include it as part of your projects. Pure SVG solution. Does not require canvas libraries to be installed on your system. 
 
 Runnable Example usage in an express app: 
 ![](assets/example.png) 
