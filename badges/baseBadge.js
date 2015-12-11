@@ -9,15 +9,11 @@ module.exports = function dualBadge(text, options) {
     var box1, box2,
         width, height;
 
-    box1 = box(text[0], {
-        font: options.font
-    });
+    box1 = box(text[0], options);
 
-    //The second box
-    box2 = box(text[1], {
-        font: options.font,
-        offsetX: box1.width
-    });
+    // The second box needs to be drawn a bit to the right.
+    options.offsetX = box1.width;
+    box2 = box(text[1], options);
 
     width = box1.width + box2.width;
     height = box1.height;
@@ -28,6 +24,7 @@ module.exports = function dualBadge(text, options) {
         w1: box1.width,
         w2: box2.width,
         text1: box1.textPath,
-        text2: box2.textPath
+        text2: box2.textPath,
+        color: options.color
     });
 };

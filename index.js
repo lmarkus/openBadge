@@ -16,7 +16,16 @@ module.exports = function getBadge(options, callback) {
             font: {
                 fontFace: 'fonts/Open_Sans/OpenSans-Bold.ttf',
                 fontSize: '11'
-            }
+            },
+            color: {
+                left: '#555',
+                right: '#4c1',
+                font: '#fff',
+                shadow: '#010101'
+            },
+            paddingX: 6,
+            paddingY: 6,
+            offsetX: 0
         };
     defaultOptions = _.merge(defaultOptions, options);
 
@@ -30,7 +39,7 @@ module.exports = function getBadge(options, callback) {
                 return callback(err);
             } else {
                 defaultOptions.font.loadedFont = loadedFont;
-                res = badge(defaultOptions.text, {font: defaultOptions.font});
+                res = badge(defaultOptions.text, defaultOptions);
                 return callback(null, res);
             }
         }
