@@ -1,6 +1,6 @@
 {
   "name": "openbadge",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create SVG badges programatically",
   "main": "index.js",
   "scripts": {
