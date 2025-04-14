@@ -5,7 +5,7 @@
             <stop offset="1" stop-opacity=".1"/>
         </linearGradient>
         <mask id="mask">
-            <rect width="${width}" height="${height}" rx="3" fill="#fff"/>
+            <rect width="${width}" height="${height}" rx="${sharpness}" fill="#fff"/>
         </mask>
         <g id="text">
             ${text1}
@@ -14,9 +14,9 @@
     </defs>
 
     <g mask="url(#mask)">
-        <rect fill="${color.left}" x="0" y="0" width="${w1}" height="${height}"/>
-        <rect fill="${color.right}" x="${w1}" y="0" width="${width}" height="${height}"/>
-        <rect fill="url(#glow)" x="0" y="0" width="${width}" height="${height}"/>
+        <rect fill="${color.left}" x="0" y="0" width="${w1}" height="${height}" rx="${sharpness}"/>
+        <rect fill="${color.right}" x="${w1}" y="0" width="${width}" height="${height}" rx="${sharpness}"/>
+        <rect fill="url(#glow)" x="0" y="0" width="${width}" height="${height}" rx="${sharpness}"/>
     </g>
     <g fill="${color.font}">
         <use x="0" y="1" fill="${color.shadow}" fill-opacity=".3" xlink:href="#text"/>
