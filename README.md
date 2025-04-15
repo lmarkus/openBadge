@@ -70,7 +70,7 @@ app.get('/defaults.svg', function (req, res) {
             fontSize: 11                    // Font size in pixels
         },
         paddingX: 6,                       // Horizontal padding (in pixels) around text
-        paddingY: 6                         // Vertical padding (in pixels) around text,
+        paddingY: 6,                         // Vertical padding (in pixels) around text
         radius: 30                          // change badge radius
     };
 
