@@ -26,6 +26,6 @@ module.exports = function dualBadge(text, options) {
         text1: box1.textPath,
         text2: box2.textPath,
         color: options.color,
-        sharpness: options.sharpness,
+        radius: options.radius,
     });
 };

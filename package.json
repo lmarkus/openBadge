@@ -9,7 +9,6 @@
   "author": "@lennymarkus",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "^5.1.0",
     "lodash": "^3.10.1",
     "opentype.js": "^0.6.0"
   },
