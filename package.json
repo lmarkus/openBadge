@@ -12,7 +12,6 @@
     "lodash": "^3.10.1",
     "opentype.js": "^0.6.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lmarkus/openBadge.git"
@@ -28,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/lmarkus/openBadge/issues"
   },
-  "homepage": "https://github.com/lmarkus/openBadge#readme"
+  "homepage": "https://github.com/lmarkus/openBadge#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }

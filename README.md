@@ -31,7 +31,7 @@ app.get('/simple.svg', function (req, res) {
  * Example: Comic Sans. Just because you can, doesn't mean you should...
  */
 app.get('/font.svg', function (req, res) {
-    openBadge({text: ['Favorite Font', 'Comic Sans'], font: {fontFace: 'fonts/comic-sans/comic-sans.ttf'}}, function (err, badgeSvg) {
+    openBadge({text: ['Favorite Font', 'Comic Sans'], font: {fontFace: 'fonts/comic-sans/comic-sans.ttf'}, radius:30}, function (err, badgeSvg) {
         /* TODO: Check for err */
         res.set('Content-Type', 'image/svg+xml');
         res.send(badgeSvg);
@@ -43,7 +43,7 @@ app.get('/font.svg', function (req, res) {
  * Individual control over both halves, the font and its dropshadow
  */
 app.get('/colors.svg', function (req, res) {
-    openBadge({text: ['Pretty', 'Colors!'], color:{left:"#ccc",right:"#cc99ff",font:"#333",shadow:"#fff"}}, function (err, badgeSvg) {
+    openBadge({text: ['Pretty', 'Colors!'], color:{left:"#ccc",right:"#cc99ff",font:"#333",shadow:"#fff"}, radius:20}, function (err, badgeSvg) {
         /* TODO: Check for err */
         res.set('Content-Type', 'image/svg+xml');
         res.send(badgeSvg);
@@ -70,7 +70,8 @@ app.get('/defaults.svg', function (req, res) {
             fontSize: 11                    // Font size in pixels
         },
         paddingX: 6,                       // Horizontal padding (in pixels) around text
-        paddingY: 6                         // Vertical padding (in pixels) around text
+        paddingY: 6,                         // Vertical padding (in pixels) around text
+        radius: 30                          // change badge radius
     };
 
     openBadge(badgeConfig, function (err, badgeSvg) {

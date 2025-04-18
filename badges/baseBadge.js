@@ -25,6 +25,7 @@ module.exports = function dualBadge(text, options) {
         w2: box2.width,
         text1: box1.textPath,
         text2: box2.textPath,
-        color: options.color
+        color: options.color,
+        radius: options.radius ?? 3, // default value
     });
 };
